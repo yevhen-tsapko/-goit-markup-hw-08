@@ -1,0 +1,72 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team__photo {
+  max-width: 100%;
+  height: auto;
+
+  width: 100%;
+}
+.team__list {
+@extend %grid;
+}
+.card {width: 100%;
+   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @include tablet {
+    @include calc(2)
+  }
+  @include desktop {
+    @include calc(4)
+  }
+}
+
+.card__info {
+   padding-top: 30px;
+  padding-bottom: 30px;
+
+   line-height: 1.19;
+  text-align: center;
+}
+.card__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.card__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social__item {
+  transition:background-color var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+   border-radius: 50%;
+   color: var(--icon-color);
+
+&:hover,
+&:focus {
+  background-color: var(--focus-color);
+  color: #fff;
+}
+}
+
+
+.social__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+   fill: currentColor;
+}

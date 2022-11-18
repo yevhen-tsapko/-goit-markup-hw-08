@@ -1,0 +1,41 @@
+.benefits {
+  @extend %grid;
+}
+.benefit__item {
+  width: 100%;
+  @include tablet {
+    @include calc(2)
+  }
+  @include desktop {
+    @include calc(4)
+  }
+  
+}
+.benefits__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+}
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits__title
+ {@extend %item-title;
+  text-align: center;
+  color: inherit;
+  margin-bottom: 10px;
+  @include tablet {
+   text-align: left;
+  }
+}
+
+.benefits__text {
+  line-height: 1.71;
+  color: var(--text-color);
+}

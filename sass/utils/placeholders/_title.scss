@@ -1,0 +1,14 @@
+.section__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size:28px;
+  text-align: center;
+
+  @include tablet {
+    margin-bottom: 50px;
+    font-size: 36px;
+   }
+
+  
+}

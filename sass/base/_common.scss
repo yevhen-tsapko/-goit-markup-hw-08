@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+}
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
