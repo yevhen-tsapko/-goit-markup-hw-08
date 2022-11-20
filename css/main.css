@@ -737,7 +737,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .card {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 90px) / 4);
   }
 }
 
