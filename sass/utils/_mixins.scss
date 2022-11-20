@@ -17,11 +17,7 @@
   }
 }
 
-// @mixin media($size) {
-//   @media screen and (min-width: $size) {
-//     @content;
-//   }
-// }
+
 
 @mixin calc($count, $gap:30px) {
   width: calc((100% - $gap * ($count - 1)) / $count);

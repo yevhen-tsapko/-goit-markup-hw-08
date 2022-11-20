@@ -1,10 +1,16 @@
 .hero {
-  padding: 118px 60px;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%,   rgba(47, 48, 58, 0.4) 100%),url(../img/img-hero.jpg);
+   @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+     background-image: url(../img/img-hero2x.jpg);
+ }
  
   background-color: rgba(47, 48, 58);
   background-position: center;
@@ -12,9 +18,14 @@
   background-repeat: no-repeat;
 
   text-align: center;
- 
+  
+  @include tablet {
+    padding: 118px 204px;
+    max-width: 768px;
+   
+  }
   @include desktop {
-    padding: 200px 60px;
+    padding: 200px 452px;
     max-width: 1600px;
     height: 600px;
   }
@@ -22,14 +33,14 @@
 
 .hero__title {
   margin: 0 auto 30px;
- 
-  font-weight: 900;
   font-size: 26px;
+  font-weight: 900;
+  // font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-
+  // @include mobile {font-size: 26px;}
   @include desktop {
     font-size: 44px;
     line-height: 1.36;

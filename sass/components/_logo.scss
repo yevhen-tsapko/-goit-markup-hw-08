@@ -1,10 +1,20 @@
 .logo {
+  // padding: 16px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000000;
+  @include tablet {
+    padding: 24px 0;
+     }
+  @include desktop {
+    // padding: 24px 0;
+    font-size: 26px;
+  line-height: 1.19;
+  }
 }
+
 .logo__part {
   color: var(--focus-color);
 }

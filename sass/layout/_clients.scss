@@ -19,8 +19,7 @@
   justify-content: center;
   align-items: center;
   height: 92px;
-  
-  
+    
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
@@ -29,14 +28,7 @@
   &:focus {
   color: var(--focus-color);
   border-color: var(--focus-color);
- 
-  @include tablet {
-    @include calc(3)
-  }
-  @include desktop {
-    @include calc(6)
-  }
-}
+ }
 }
 .client__logo {
   display: block;

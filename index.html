@@ -31,7 +31,7 @@
                        </button>
           <div class="nav-container nav-container--is-hidden" data-menu>
             <button class="close-button nav__close-button" type="button" data-menu-close>
-              <svg class="close-button__icon" width="40" height="40">
+              <svg class="close-buttonicon" width="40" height="40">
                 <use class="nav-close" href="./img/symbol-defs.svg#close-nav"></use>
              </svg>
                          </button>
@@ -50,7 +50,7 @@
         </nav>
         <div class="contacts">
           
-          <a href="tel:+380961111111" class="contact link"
+          <a href="tel:+380961111111" class="tel link"
             >
                   <svg class="contact__icon" width="10" height="16">
               <use href="./img/symbol-defs.svg#smartphone"></use>
@@ -58,7 +58,7 @@
             +38 096 111 11 11
           </a
         >
-        <a href="mailto:info@devstudio.com" class="contact link"
+        <a href="mailto:info@devstudio.com" class="email link"
             >
             <svg class="contact__icon" width="16" height="12">
                 <use href="./img/symbol-defs.svg#envelope"></use>
@@ -89,9 +89,7 @@
             </a>
           </li>
         </ul>
-        <!-- <div class="social social__header">
-
-        </div> -->
+       
           </div>
       </div>
     </header>
@@ -160,19 +158,22 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="products__list list">
             <li class="products__item list">
-              <img src="img/box1.jpg" alt="Десктопна розробка" width="370" />
+              <img srcset="img/box1.jpg 1x, img/box1_2x.jpg 2x"
+              src="img/box1.jpg" alt="Десктопна розробка" width="370" />
               <p class="products__text">
                 Десктопні додатки
               </p>
             </li>
             <li class="products__item list">
-              <img src="img/box2.jpg" alt="Мобільна розробка" width="370" />
+              <img srcset="img/box1.jpg 2x, img/box2_2x.jpg 2x"
+              src="img/box2.jpg" alt="Мобільна розробка" width="370" />
               <p class="products__text">
                 Мобільні додатки
               </p>
             </li>
             <li class="products__item list">
-              <img src="img/box3.jpg" alt="Дизайн" width="370" />
+              <img srcset="img/box3.jpg 1x, img/box3_2x.jpg 2x"
+              src="img/box3.jpg" alt="Дизайн" width="370" />
               <p class="products__text">
                 Дизайнерські рішення
               </p>
@@ -186,7 +187,8 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="card list">
-              <img src="img/img1.jpg" alt="Фото співробітника" class="team__photo" />
+              <img srcset="img/img1.jpg 1x, img/img1_2x.jpg 2x"
+              src="img/img1.jpg" alt="Фото співробітника" class="team__photo" />
               <div class="card__info">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -224,7 +226,8 @@
              
             </li>
             <li class="card list">
-              <img src="img/img2.jpg" alt="Фото співробітниці" class="team__photo" />
+              <img srcset="img/img2.jpg 1x, img/img2_2x.jpg 2x"
+              src="img/img2.jpg" alt="Фото співробітниці" class="team__photo" />
               <div class="card__info">
                 <h3 class="card__title">Ольга Рєпіна</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -262,7 +265,8 @@
             
             </li>
             <li class="card list">
-              <img src="img/img3.jpg" alt="Фото співробітника" class="team__photo" />
+              <img srcset="img/img3.jpg 1x, img/img3_2x.jpg 2x"
+              src="img/img3.jpg" alt="Фото співробітника" class="team__photo" />
               <div class="card__info">
                 <h3 class="card__title">Микола Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -300,7 +304,8 @@
              
             </li>
             <li class="card list">
-              <img src="img/img4.jpg" alt="Фото співробітника" class="team__photo" />
+              <img srcset="img/img4.jpg 1x, img/img4_2x.jpg 2x"
+              src="img/img4.jpg" alt="Фото співробітника" class="team__photo" />
               <div class="card__info">
                 <h3 class="card__title">Михайло Єрмаков</h3>
                 <p class="card__text">UI Designer</p>
@@ -420,28 +425,28 @@
           <p class="join__slogan" >Приєднуйтесь</p>
           <ul class="social">
             <li class="list">
-              <a class="social__item " href="">
+              <a class="social__item social__item--dark" href="">
                 <svg class="social__icon social__icon--white">
                   <use href="./img/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class="social__item " href="">
+              <a class="social__item social__item--dark" href="">
                 <svg class="social__icon ">
                   <use href="./img/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class="social__item " href="">
+              <a class="social__item social__item--dark" href="">
                 <svg class="social__icon social__icon--white">
                   <use href="./img/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class="social__item " href="">
+              <a class="social__item social__item--dark" href="">
                 <svg class="social__icon social__icon--white">
                   <use href="./img/symbol-defs.svg#linkedin"></use>
                 </svg>
@@ -524,8 +529,7 @@
 </form>
           </div>
         </div>
-        <!-- <div class="nav-window"> -->
-          
+                 
         </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
