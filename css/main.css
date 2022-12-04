@@ -333,7 +333,7 @@ img {
 .check {
   position: relative;
   display: inline-block;
-  margin-left: 31px;
+  margin-left: 12px;
   padding-left: 20px;
   line-height: 1.71;
   color: var(--text-color);
@@ -1073,14 +1073,13 @@ img {
 }
 
 .project {
-  width: 370px;
+  width: 450px;
   transition: box-shadow var(--transition);
   display: block;
 }
 .project:hover, .project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 @media screen and (min-width: 768px) {
   .project {
     width: calc((100% - 30px) / 2);
@@ -1101,6 +1100,10 @@ img {
 .project__img {
   position: relative;
   overflow: hidden;
+}
+
+.project__pic {
+  width: 100%;
 }
 
 .project__overlay {
